@@ -464,38 +464,22 @@ figure {
 
 .preloader .icon {
   position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px; /* Set the desired width for the logo */
+  height: 500px; /* Set the desired height for the logo */
   z-index: 5;
   background-color: rgba(0, 0, 0, 0);
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url(../images/icons/preloader.png);
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease;
-  -webkit-animation-name: rotateMe;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-name: rotateMe;
-  -moz-animation-duration: 2s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -ms-animation-name: rotateMe;
-  -ms-animation-duration: 2s;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-timing-function: linear;
-  animation-name: rotateMe;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  /* Remove the animation properties */
 }
-
+/* 
 .preloader__gradient .icon {
   background-image: url(../images/update-26-02-2021/preloader-white.png);
-}
+} */
 
 .page-loaded .preloader .icon {
   opacity: 0;
